@@ -119,10 +119,6 @@ p:last-child {
 
 /* Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
     background-color: rgba(250, 250, 250, 0.8);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -130,6 +126,14 @@ p:last-child {
     top: 0;
     z-index: 100;
     border-bottom: 1px solid var(--border-color);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .logo {
@@ -155,13 +159,13 @@ p:last-child {
 
 /* Sections */
 main {
-    padding: 2rem;
-    max-width: 1400px;
-    margin: 0 auto;
+    width: 100%;
 }
 
-.section {
-    padding: 4rem 0;
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
 }
 
 /* Grid Section */
@@ -243,7 +247,6 @@ main {
     background-color: var(--accent);
     border-radius: var(--border-radius);
     padding: 6rem 3rem;
-    margin-top: 4rem;
 }
 
 .cta h2 {
@@ -275,7 +278,7 @@ footer {
     font-size: 0.875rem;
 }
 
-/* Responsive (Mobile First) */
+/* Tablets */
 @media (min-width: 768px) {
     h1 {
         font-size: 3rem;
@@ -285,8 +288,9 @@ footer {
         font-size: 2.5rem;
     }
 
-    .navbar {
-        padding: .5rem 4rem;
+    .navbar .container {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
     }
 
     .nav-links {
@@ -309,12 +313,9 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
     }
-
-    .section {
-        padding: 8rem 0;
-    }
 }
 
+/* Desktops */
 @media (min-width: 1024px) {
     h1 {
         font-size: 3.5rem;
@@ -324,7 +325,7 @@ footer {
         gap: 6rem;
     }
 
-    main {
-        padding: 2rem 4rem;
+    .container {
+        padding: 8rem 1rem;
     }
 }
