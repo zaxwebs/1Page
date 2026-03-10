@@ -189,7 +189,7 @@ main {
     object-fit: cover;
 }
 
-.bg-sage {
+.bg-accent {
     background-color: var(--accent);
 }
 
