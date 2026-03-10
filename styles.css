@@ -98,8 +98,6 @@ p:last-child {
 
 .btn-primary:hover {
     background-color: #000;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .btn-outline {
